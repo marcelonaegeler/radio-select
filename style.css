@@ -1,0 +1,14 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+.radio-box .radio-select-field {
+	display: none;
+}
+
+.radio-box.active .radio-select-field {
+	display: block;
+}
