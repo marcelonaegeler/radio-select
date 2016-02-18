@@ -31,6 +31,29 @@
 		</div>
 	</div>
 
+	<div style="margin: 30px 0">
+		<h3>Calculadora de parcelas</h3>
+
+		<div>
+			<input type="text" id="valor-total" value="200"> -> Valor da compra
+		</div>
+
+		<div style="margin: 10px 0">
+			<label>
+				Número de parcelas: <input type="text" name="parcelas" id="total-parcelas">
+			</label>
+		</div>
+		<div id="lista-parcelas"></div>
+	</div>
+
+	<script type="js-template" id="tpl-parcelas">
+		<div>
+			<input type="text" name="data[<% index %>]" value="<% if ( data ) { %><% data %><% } %>">
+			<input type="text" name="valor[<% index %>]" value="<% if ( price ) { %><% price %><% } %>">
+		</div>
+	</script>
+
+	<script src="engine.js"></script>
 	<script src="radio-select.js"></script>
 </body>
 </html>

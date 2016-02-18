@@ -5,6 +5,10 @@
 	font-size: 16px;
 }
 
+label {
+	display: block;
+}
+
 .radio-box .radio-select-field {
 	display: none;
 }
